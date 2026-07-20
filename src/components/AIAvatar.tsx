@@ -86,7 +86,7 @@ export default function AIAvatar({ name }: { name: string }) {
         className="relative z-10 h-20 w-20 overflow-hidden rounded-full border-2 border-gold/40 shadow-2xl shadow-gold/10"
       >
         <img
-          src={`https://api.dicebear.com/9.x/lorelei/svg?seed=${initials}&backgroundColor=0d1b2a&hairColor=fbbf24&eyesColor=fbbf24`}
+          src={`https://api.dicebear.com/9.x/adventurer/svg?seed=Abhipsa&backgroundColor=0d1b2a&hairColor=fbbf24&eyesColor=fbbf24&mouth=wideSmile,smile,lilSmile`}
           alt={name}
           className="h-full w-full object-cover"
         />
