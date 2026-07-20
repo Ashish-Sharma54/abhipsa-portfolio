@@ -141,7 +141,8 @@ export default function Sidebar({
         <div className="flex items-center justify-between">
           <motion.a
             href={siteConfig.resumeUrl}
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             className="flex items-center gap-2 rounded-xl bg-gradient-to-r from-navy to-navy-light px-4 py-2.5 text-xs font-semibold text-gold shadow-lg shadow-navy/20 transition-all hover:shadow-xl hover:shadow-navy/30"

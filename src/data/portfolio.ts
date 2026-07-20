@@ -8,7 +8,7 @@ export const siteConfig = {
   github: "https://github.com/dashabhipsa",
   linkedin: "https://www.linkedin.com/in/dash-abhipsa1a00121/",
   location: "NIT Rourkela, Odisha",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "https://drive.google.com/file/d/19moOUDXGppFoUSiFKzdl9uZPFpJMyfSN/view?usp=sharing",
 };
 
 export const navLinks = [
