@@ -5,6 +5,7 @@ import { Sun, Moon, Mail, MapPin, ArrowRight } from "lucide-react";
 import { GithubIcon, LinkedinIcon, ScholarIcon } from "./Icons";
 import { useTheme } from "./ThemeProvider";
 import { siteConfig } from "@/data/portfolio";
+import AIAvatar from "./AIAvatar";
 import type { Tab } from "./Portfolio";
 
 const navItems: { id: Tab; label: string }[] = [
@@ -38,18 +39,8 @@ export default function Sidebar({
         transition={{ duration: 0.5 }}
         className="relative px-6 pt-8 pb-6"
       >
-        <div className="mb-5 flex items-center gap-3">
-          <div className="relative group">
-            <motion.div
-              whileHover={{ scale: 1.05, rotate: 3 }}
-              className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-navy to-navy-light text-lg font-bold text-gold shadow-lg shadow-navy/20"
-            >
-              AD
-            </motion.div>
-            <div className="absolute -bottom-0.5 -right-0.5 h-4 w-4 rounded-full border-2 border-card bg-emerald-500">
-              <span className="absolute inset-0 rounded-full bg-emerald-500 animate-pulse-ring" />
-            </div>
-          </div>
+        <div className="mb-5 flex items-center gap-4">
+          <AIAvatar name={siteConfig.fullName} />
           <div>
             <h1 className="text-base font-bold">{siteConfig.fullName}</h1>
             <p className="text-xs text-gold font-medium">{siteConfig.title}</p>

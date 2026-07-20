@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Sun, Moon, Menu, X } from "lucide-react";
 import { useTheme } from "./ThemeProvider";
 import Sidebar from "./Sidebar";
+import AnimatedBG from "./AnimatedBG";
 import AboutTab from "./tabs/AboutTab";
 import ResearchTab from "./tabs/ResearchTab";
 import PublicationsTab from "./tabs/PublicationsTab";
@@ -37,8 +38,9 @@ export default function Portfolio() {
 
   return (
     <div className="flex h-screen overflow-hidden bg-background">
+      <AnimatedBG />
       {/* Desktop Sidebar */}
-      <div className="hidden lg:block">
+      <div className="relative z-10 hidden lg:block">
         <Sidebar activeTab={activeTab} onTabChange={handleTabChange} />
       </div>
 
@@ -100,7 +102,7 @@ export default function Portfolio() {
       </AnimatePresence>
 
       {/* Main Content */}
-      <div className="flex-1 overflow-y-auto pt-14 lg:pt-0">
+      <div className="relative z-10 flex-1 overflow-y-auto pt-14 lg:pt-0">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab}
