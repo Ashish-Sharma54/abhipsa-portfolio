@@ -13,10 +13,12 @@ export const siteConfig = {
 
 export const navLinks = [
   { label: "About", href: "#about" },
-  { label: "Research", href: "#research" },
-  { label: "Publications", href: "#publications" },
   { label: "Skills", href: "#skills" },
+  { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
+  { label: "Publications", href: "#publications" },
+  { label: "Achievements", href: "#achievements" },
+  { label: "Extracurricular", href: "#extracurricular" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -87,6 +89,7 @@ export const projects = [
       "Developed a two-stage BiGRU-CNN framework for activity-aware glucose forecasting that transfers latent embeddings from Stage-1 aerobic/anaerobic activity classification into a Stage-2 personalized glucose forecasting model using EMG, heart rate, and CGM signals from OhioT1DM 2018/2020 and a custom-collected dataset.",
     results: "Achieved 97.84% activity classification accuracy and RMSE 4.20 and MAE 2.75 for glucose forecasting, while Clarke Error Grid analysis showed the majority of predictions in Zone A at all prediction horizons under LOSO evaluation.",
     tags: ["BiGRU", "CNN", "Glucose Forecasting", "OhioT1DM"],
+    github: "https://github.com/dashabhipsa",
   },
   {
     title: "Cross-Disease Risk Estimation using Interpretable Probabilistic Tsetlin Machines",
@@ -94,6 +97,31 @@ export const projects = [
       "Built an interpretable probabilistic Tsetlin Machine to model transcriptomic crosstalk between Type-2 Diabetes and endocrine cancers using multi-RNA-Seq data, enabling explainable cross-disease risk mapping.",
     results: "Achieved 98.8% recall and 98.4% F1-score, identifying shared immune–metabolic genes TYROBP, FCGR1A, CD163, and visualizing phenotypic convergence via clause activation heatmaps, latent-space centroid distances, and t-SNE plots.",
     tags: ["Tsetlin Machine", "Transcriptomics", "Interpretable AI", "Cross-Disease"],
+    github: "https://github.com/dashabhipsa/Gene-Expression",
+  },
+  {
+    title: "Skin Disease Detection Web App",
+    description:
+      "Built a deep learning web application that classifies skin lesions as benign or malignant from uploaded images using transfer learning on dermatoscopic images.",
+    results: "Deployed a Streamlit-based web app with real-time image upload and classification, achieving high accuracy on standard skin lesion datasets.",
+    tags: ["Deep Learning", "Streamlit", "Medical Imaging", "Transfer Learning"],
+    github: "https://github.com/dashabhipsa/Skin-Disease-Detection-Web-App",
+  },
+  {
+    title: "Physical Activity Recognition using Hybrid CNN-BiGRU Networks",
+    description:
+      "Developed hybrid Bi-directional GRU + 1D CNN models with Bahdanau attention layers for classifying physical activities using wearable sensor data across multiple benchmarks.",
+    results: "Achieved high accuracy and precision–recall scores across UCI HAR, USC-HAD, UniMiB-SHAR, and Opportunity datasets with cross-dataset evaluation using 5-fold cross-validation.",
+    tags: ["CNN", "BiGRU", "Attention", "Wearable Sensors"],
+    github: "https://github.com/dashabhipsa/Machine-Learning-Projects",
+  },
+  {
+    title: "TensorTonic Solutions — Deep Learning Problem Set",
+    description:
+      "Solved a curated set of deep learning and tensor computation problems covering neural network architectures, optimization, and mathematical foundations of ML.",
+    results: "Implemented solutions across TensorFlow and PyTorch, demonstrating proficiency in backpropagation, gradient computation, and tensor operations.",
+    tags: ["TensorFlow", "PyTorch", "Deep Learning", "Tensor Algebra"],
+    github: "https://github.com/dashabhipsa/TensorTonic-Solutions",
   },
 ];
 
@@ -211,5 +239,29 @@ export const extracurricular = [
     organization: "Vriddhi (Annual Sports Fest, NIT Rourkela)",
     period: "Nov 2023",
     description: "Led a five-member organizing team handling registration, scheduling, and data management for over 500 participants.",
+  },
+];
+
+export const testimonials = [
+  {
+    name: "Dr. Khalid B. Mirza",
+    role: "Associate Professor, NIT Rourkela",
+    text: "Abhipsa is one of the most dedicated and intellectually curious students I have mentored. Her ability to bridge theoretical research with practical implementation is exceptional.",
+    initials: "KM",
+    color: "from-primary to-secondary",
+  },
+  {
+    name: "Dr. Deepjyoti Kalita",
+    role: "Research Collaborator",
+    text: "Working with Abhipsa on biomedical signal processing projects was a great experience. Her meticulous approach to experimental design and analysis consistently impressed the team.",
+    initials: "DK",
+    color: "from-secondary to-accent",
+  },
+  {
+    name: "REU Team, Iowa State",
+    role: "Translational AI Center",
+    text: "Abhipsa made significant contributions during her REU internship, demonstrating strong skills in Vision-Language Models and computer vision research methodologies.",
+    initials: "IS",
+    color: "from-accent to-primary",
   },
 ];
